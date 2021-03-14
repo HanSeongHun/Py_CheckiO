@@ -1,0 +1,60 @@
+<p>
+Find the distance and directions to an enemy in a HEX-grid.
+</p>
+
+<p>HEX-grid</p>
+
+<p>
+    <img src="https://d17mnqrx9pmt3e.cloudfront.net/media/missions/media/fdde6dd3a5a340658a91c14ef7ea08b2/grid.png"
+         alt="HEX-Grid"
+         style="max-height: 237px"/>
+</p>
+
+
+<p>Absolute Directions</p>
+
+<p>
+    <img src="https://d17mnqrx9pmt3e.cloudfront.net/media/missions/media/fdde6dd3a5a340658a91c14ef7ea08b2/directions.png"
+         alt="Directions"
+         style="max-height: 159px"/>
+</p>
+
+<p>Relative Directions</p>
+<p>* if your absolute directions are "N"</p>
+
+<p>
+    <img src="https://d17mnqrx9pmt3e.cloudfront.net/media/missions/media/fdde6dd3a5a340658a91c14ef7ea08b2/relative_directions.png"
+         alt="Relative Directions"
+         style="max-height: 245px"/>
+</p>
+
+<p><strong>Input: </strong>Three arguments: your current coordinates, your current absolute directions, and enemy's coordinates.</p>
+
+<p><strong>Output: </strong>A list with relative directions and distance to the enemy.</p>
+
+<div class="for_info_only">
+    <p><strong>Example:</strong></p>
+<pre class="brush: python">
+find_enemy('B2', 'S', 'B4') == ['F', 2]
+</pre>
+</div>
+
+<p>
+    <img src="https://d17mnqrx9pmt3e.cloudfront.net/media/missions/media/fdde6dd3a5a340658a91c14ef7ea08b2/example.png"
+         alt="Example"
+         style="max-height: 279px"/>
+</p>
+<br />
+<p>
+    <strong>How it is used:</strong>
+    <p>War-game design using hex-grid.</p>
+</p>
+
+<p>
+    <strong>Precondition:</strong><br>
+    'A1' &le; coordinates &le; 'Z9'.<br>
+    direction in ('N', 'NE', 'SE', 'S', 'SW', 'NW').<br>
+    your coordinates &ne; enemy's coordinates.
+</p>
+
+<p><a href="https://py.checkio.org/en/mission/find-enemy">See the task on CheckiO</a></p>

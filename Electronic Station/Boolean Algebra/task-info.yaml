@@ -1,0 +1,38 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "OPERATION_NAMES = (\"conjunction\", \"disjunction\", \"implication\", \"\
+    exclusive\", \"equivalence\")\n\ndef boolean(x, y, operation):\n    if operation\
+    \ == OPERATION_NAMES[0]:\n        if x==y :\n            return x\n        else:\
+    \ \n            return 0\n    elif operation == OPERATION_NAMES[1]:\n        if\
+    \ x ==1 or y==1:\n            return 1\n        else:\n            return 0\n\
+    \    elif operation == OPERATION_NAMES[2]:\n        if y==1:\n            return\
+    \ 1\n        elif x==0 and y==0:\n            return 1\n        else:\n      \
+    \      return 0\n\n    elif operation == OPERATION_NAMES[3]:\n        if x ==y:\n\
+    \            return 0\n        else:\n            return 1\n    else:\n      \
+    \  if x== y:\n            return 1\n        else:\n            return 0\n\nif\
+    \ __name__ == '__main__':\n    #These \"asserts\" using only for self-checking\
+    \ and not necessary for auto-testing\n    assert boolean(1, 0, \"conjunction\"\
+    ) == 0, \"and\"\n    assert boolean(1, 0, \"disjunction\") == 1, \"or\"\n    assert\
+    \ boolean(1, 1, \"implication\") == 1, \"material\"\n    assert boolean(0, 1,\
+    \ \"exclusive\") == 1, \"xor\"\n    assert boolean(0, 1, \"equivalence\") == 0,\
+    \ \"same?\"\n    print('All good! Go and check the mission.')\n"
+  learner_created: false
+status: Solved
+code: "OPERATION_NAMES = (\"conjunction\", \"disjunction\", \"implication\", \"exclusive\"\
+  , \"equivalence\")\n\ndef boolean(x, y, operation):\n    if operation == OPERATION_NAMES[0]:\n\
+  \        if x==y :\n            return x\n        else: \n            return 0\n\
+  \    elif operation == OPERATION_NAMES[1]:\n        if x ==1 or y==1:\n        \
+  \    return 1\n        else:\n            return 0\n    elif operation == OPERATION_NAMES[2]:\n\
+  \        if y==1:\n            return 1\n        elif x==0 and y==0:\n         \
+  \   return 1\n        else:\n            return 0\n\n    elif operation == OPERATION_NAMES[3]:\n\
+  \        if x ==y:\n            return 0\n        else:\n            return 1\n\
+  \    else:\n        if x== y:\n            return 1\n        else:\n           \
+  \ return 0\n\nif __name__ == '__main__':\n    #These \"asserts\" using only for\
+  \ self-checking and not necessary for auto-testing\n    assert boolean(1, 0, \"\
+  conjunction\") == 0, \"and\"\n    assert boolean(1, 0, \"disjunction\") == 1, \"\
+  or\"\n    assert boolean(1, 1, \"implication\") == 1, \"material\"\n    assert boolean(0,\
+  \ 1, \"exclusive\") == 1, \"xor\"\n    assert boolean(0, 1, \"equivalence\") ==\
+  \ 0, \"same?\"\n    print('All good! Go and check the mission.')\n"
+seconds_from_change: 30063509

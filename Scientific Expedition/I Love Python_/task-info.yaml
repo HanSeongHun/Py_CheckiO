@@ -1,0 +1,16 @@
+type: checkiO
+custom_name: I Love Python!
+files:
+- name: mission.py
+  visible: true
+  text: "def i_love_python():\n    \"\"\"\n        Let's explain why do we love Python.\n\
+    \    \"\"\"\n    \n    return \"I love Python!\"\n\nif __name__ == '__main__':\n\
+    \    #These \"asserts\" using only for self-checking and not necessary for auto-testing\n\
+    \    assert i_love_python() == \"I love Python!\"\n"
+  learner_created: false
+status: Solved
+code: "def i_love_python():\n    \"\"\"\n        Let's explain why do we love Python.\n\
+  \    \"\"\"\n    \n    return \"I love Python!\"\n\nif __name__ == '__main__':\n\
+  \    #These \"asserts\" using only for self-checking and not necessary for auto-testing\n\
+  \    assert i_love_python() == \"I love Python!\"\n"
+seconds_from_change: 11867098

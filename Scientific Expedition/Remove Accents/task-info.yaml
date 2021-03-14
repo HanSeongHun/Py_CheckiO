@@ -1,0 +1,15 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "def checkio(in_string):\n    \"remove accents\"\n    \n    return in_string\n\
+    \n    #These \"asserts\" using only for self-checking and not necessary for auto-testing\n\
+    if __name__ == '__main__':\n    assert checkio(u\"préfèrent\") == u\"preferent\"\
+    \n    assert checkio(u\"loài trăn lớn\") == u\"loai tran lon\"\n    print('Done')\n"
+  learner_created: false
+status: Unchecked
+code: "def checkio(in_string):\n    \"remove accents\"\n    \n    return in_string\n\
+  \n    #These \"asserts\" using only for self-checking and not necessary for auto-testing\n\
+  if __name__ == '__main__':\n    assert checkio(u\"préfèrent\") == u\"preferent\"\
+  \n    assert checkio(u\"loài trăn lớn\") == u\"loai tran lon\"\n    print('Done')\n"
+seconds_from_change: 3887

@@ -1,0 +1,30 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "def time_converter(time):\n    #replace this for solution\n    a = time.split(':')\
+    \    \n    print(a[0])\n    num = int(a[0])\n    if num > 12:\n        num = str(num-12)\n\
+    \        result = num + ':' + a[1] + ' p.m.'    \n    elif num ==12:\n       \
+    \ num = str(num)\n        result = num + ':' + a[1] + ' p.m.'   \n    elif num\
+    \ ==0:\n        num = str(num+12)\n        result = num + ':' + a[1] + ' a.m.'\n\
+    \    else:\n        num = str(num)\n        result = num + ':' + a[1] + ' a.m.'\n\
+    \    return result\n\nif __name__ == '__main__':\n    print(\"Example:\")\n  \
+    \  print(time_converter('12:30'))\n\n    #These \"asserts\" using only for self-checking\
+    \ and not necessary for auto-testing\n    assert time_converter('12:30') == '12:30\
+    \ p.m.'\n    assert time_converter('09:00') == '9:00 a.m.'\n    assert time_converter('23:15')\
+    \ == '11:15 p.m.'\n    print(\"Coding complete? Click 'Check' to earn cool rewards!\"\
+    )"
+  learner_created: false
+status: Solved
+code: "def time_converter(time):\n    #replace this for solution\n    a = time.split(':')\
+  \    \n    print(a[0])\n    num = int(a[0])\n    if num > 12:\n        num = str(num-12)\n\
+  \        result = num + ':' + a[1] + ' p.m.'    \n    elif num ==12:\n        num\
+  \ = str(num)\n        result = num + ':' + a[1] + ' p.m.'   \n    elif num ==0:\n\
+  \        num = str(num+12)\n        result = num + ':' + a[1] + ' a.m.'\n    else:\n\
+  \        num = str(num)\n        result = num + ':' + a[1] + ' a.m.'\n    return\
+  \ result\n\nif __name__ == '__main__':\n    print(\"Example:\")\n    print(time_converter('12:30'))\n\
+  \n    #These \"asserts\" using only for self-checking and not necessary for auto-testing\n\
+  \    assert time_converter('12:30') == '12:30 p.m.'\n    assert time_converter('09:00')\
+  \ == '9:00 a.m.'\n    assert time_converter('23:15') == '11:15 p.m.'\n    print(\"\
+  Coding complete? Click 'Check' to earn cool rewards!\")"
+seconds_from_change: 32499178

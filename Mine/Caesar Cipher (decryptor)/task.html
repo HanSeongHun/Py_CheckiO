@@ -1,0 +1,56 @@
+<!-- Describe task in general -->
+
+<p>
+This mission is the part of set. Another one - <a href='https://py.checkio.org/en/mission/caesar-cipher-encryptor/'>Caesar cipher encryptor</a>.
+</p>
+
+<p>
+    Oh no! When we received an encrypted text we've noticed that there are some extra symbols!<br>
+    Your mission is to decrypt a secret message (which consists of text, the whitespace characters and special chars like "!", "&", "?" etc.) using Caesar cipher where each letter is replaced by another that stands at a fixed distance. For example ("a b c", 3) == "d e f".
+Also you should ignore/delete all special characters. So the message like this ("!d! [e] &f*", -3) will be decrypted just as "a b c" and nothing more.
+</p>
+
+<p style="text-align: center;">
+    <img  title="Caesar decryptor" src="https://d17mnqrx9pmt3e.cloudfront.net/media/missions/media/a9300abe3fcd4e47a76a63d1c28ce22b/drawing.png" alt="example" style="max-height: 80px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> A Secret message as a string (lowercase letters only, white spaces and special characters)
+</p>
+
+<p>
+    <strong>Output: </strong> The same string, but decrypted into a normal text
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Example:</strong>
+</p>
+
+<pre class="brush: python">to_decrypt("!d! [e] &f*", -3) == "a b c"
+to_decrypt("x^$# y&*( (z):-)", 3) == "a b c"
+to_decrypt("iycfbu!@# junj%&", -16) == "simple text"
+to_decrypt("*$#%swzybdkxd !)(^#%dohd", -10) == "important text"
+to_decrypt("fgngr **&&frperg^__^", 13) == "state secret"
+</pre>
+
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    For cryptography and to save important information.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Precondition</strong>:<br>
+    0 < len(text) < 50<br>
+    -26 < delta < 26
+</p>
+
+<p><a href="https://py.checkio.org/en/mission/caesar-cipher-decryptor">See the task on CheckiO</a></p>

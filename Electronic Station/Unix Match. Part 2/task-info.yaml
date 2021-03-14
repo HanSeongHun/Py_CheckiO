@@ -1,0 +1,34 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "def unix_match(filename: str, pattern: str) -> bool:\n    if filename ==\
+    \ pattern:\n        return True\n    save = []\n    result = False\n    start\
+    \ = 0\n    if '[' in pattern:\n        start = pattern.find('[')\n        save\
+    \ = pattern[pattern.find('[')+1:pattern.find(']')]\n        if filename in pattern:\n\
+    \            return False\n        if len(save) == 0:\n            return False\n\
+    \    \n    else:\n        if filename != pattern:\n            return False\n\
+    \    \n    if '!' in save:\n        if save.find(filename[start]) != -1:\n   \
+    \         result = False\n        else:\n            result = True\n    else:\n\
+    \        if pattern.find(filename[start]) == -1:\n            result = False\n\
+    \        else: \n            result = True\n    print(save)\n    \n    return\
+    \ result\n    \n\nif __name__ == '__main__':\n    print(\"Example:\")\n    \n\
+    \    # These \"asserts\" are used for self-checking and not for an auto-testing\n\
+    \    assert unix_match(\"nametxt\",\"name[]txt\") == True\n    print(\"Coding\
+    \ complete? Click 'Check' to earn cool rewards!\")\n"
+  learner_created: false
+status: Solved
+code: "def unix_match(filename: str, pattern: str) -> bool:\n    if filename == pattern:\n\
+  \        return True\n    save = []\n    result = False\n    start = 0\n    if '['\
+  \ in pattern:\n        start = pattern.find('[')\n        save = pattern[pattern.find('[')+1:pattern.find(']')]\n\
+  \        if filename in pattern:\n            return False\n        if len(save)\
+  \ == 0:\n            return False\n    \n    else:\n        if filename != pattern:\n\
+  \            return False\n    \n    if '!' in save:\n        if save.find(filename[start])\
+  \ != -1:\n            result = False\n        else:\n            result = True\n\
+  \    else:\n        if pattern.find(filename[start]) == -1:\n            result\
+  \ = False\n        else: \n            result = True\n    print(save)\n    \n  \
+  \  return result\n    \n\nif __name__ == '__main__':\n    print(\"Example:\")\n\
+  \    \n    # These \"asserts\" are used for self-checking and not for an auto-testing\n\
+  \    assert unix_match(\"nametxt\",\"name[]txt\") == True\n    print(\"Coding complete?\
+  \ Click 'Check' to earn cool rewards!\")\n"
+seconds_from_change: 30008131

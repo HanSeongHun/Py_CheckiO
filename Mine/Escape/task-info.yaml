@@ -1,0 +1,27 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "def escape(jar, fly):\r\n    W, H, d = jar\r\n    x0, y0, vx, vy = fly\r\n\
+    \r\n    # your code here\r\n    return False\r\n\r\n\r\nif __name__ == '__main__':\r\
+    \n    print(\"Example:\")\r\n    print(escape([1000, 1000, 200], [0, 0, 100, 0]))\r\
+    \n    \r\n    # These \"asserts\" are used for self-checking and not for an auto-testing\r\
+    \n    assert escape([1000, 1000, 200], [0, 0, 100, 0]) == False, \"First\"\r\n\
+    \    assert escape([1000, 1000, 200], [450, 50, 0, -100]) == True, \"Second\"\r\
+    \n    assert escape([1000, 1000, 200], [450, 1000, 100, 0]) == False, \"Third\"\
+    \r\n    assert escape([1000, 1000, 200], [250, 250, -10, -50]) == False, \"Fourth\"\
+    \r\n    assert escape([1000, 2000, 200], [20, 35, 100, 175]) == True, \"Fifth\"\
+    \r\n    print(\"Coding complete? Click 'Check' to earn cool rewards!\")"
+  learner_created: false
+status: Unchecked
+code: "def escape(jar, fly):\r\n    W, H, d = jar\r\n    x0, y0, vx, vy = fly\r\n\r\
+  \n    # your code here\r\n    return False\r\n\r\n\r\nif __name__ == '__main__':\r\
+  \n    print(\"Example:\")\r\n    print(escape([1000, 1000, 200], [0, 0, 100, 0]))\r\
+  \n    \r\n    # These \"asserts\" are used for self-checking and not for an auto-testing\r\
+  \n    assert escape([1000, 1000, 200], [0, 0, 100, 0]) == False, \"First\"\r\n \
+  \   assert escape([1000, 1000, 200], [450, 50, 0, -100]) == True, \"Second\"\r\n\
+  \    assert escape([1000, 1000, 200], [450, 1000, 100, 0]) == False, \"Third\"\r\
+  \n    assert escape([1000, 1000, 200], [250, 250, -10, -50]) == False, \"Fourth\"\
+  \r\n    assert escape([1000, 2000, 200], [20, 35, 100, 175]) == True, \"Fifth\"\r\
+  \n    print(\"Coding complete? Click 'Check' to earn cool rewards!\")"
+seconds_from_change: 9223372036854775807

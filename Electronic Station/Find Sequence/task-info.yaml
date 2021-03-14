@@ -1,0 +1,51 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "\ndef check_line(line):\n    if 4 <= len(line) and 4 == line[0:4].count(line[0]):\n\
+    \        return True\n\ndef checkio(matrix):\n    #replace this for solution\n\
+    \    width = len(matrix[0])\n    height = len(matrix)\n    for y in range(height):\n\
+    \        for x in range(width):\n            h_line = matrix[y][x:]\n        \
+    \    if check_line(h_line):\n                return True\n\n            v_line\
+    \ = [matrix[r][x] for r in range(y, height)]\n            if check_line(v_line):\n\
+    \                return True\n\n            right_down_line = [matrix[r][c] for\
+    \ r,c in zip(range(y, height), range(x, width))]\n            if check_line(right_down_line):\n\
+    \                return True\n\n            left_down_line = [matrix[r][c] for\
+    \ r,c in zip(range(y, height), range(x, -1, -1))]\n            if check_line(left_down_line):\n\
+    \                return True\n\n    return False\n                \n\nif __name__\
+    \ == '__main__':\n    #These \"asserts\" using only for self-checking and not\
+    \ necessary for auto-testing\n    assert checkio([\n        [1, 2, 1, 1],\n  \
+    \      [1, 1, 4, 1],\n        [1, 3, 1, 6],\n        [1, 7, 2, 5]\n    ]) == True,\
+    \ \"Vertical\"\n    assert checkio([\n        [7, 1, 4, 1],\n        [1, 2, 5,\
+    \ 2],\n        [3, 4, 1, 3],\n        [1, 1, 8, 1]\n    ]) == False, \"Nothing\
+    \ here\"\n    assert checkio([\n        [2, 1, 1, 6, 1],\n        [1, 3, 2, 1,\
+    \ 1],\n        [4, 1, 1, 3, 1],\n        [5, 5, 5, 5, 5],\n        [1, 1, 3, 1,\
+    \ 1]\n    ]) == True, \"Long Horizontal\"\n    assert checkio([\n        [7, 1,\
+    \ 1, 8, 1, 1],\n        [1, 1, 7, 3, 1, 5],\n        [2, 3, 1, 2, 5, 1],\n   \
+    \     [1, 1, 1, 5, 1, 4],\n        [4, 6, 5, 1, 3, 1],\n        [1, 1, 9, 1, 2,\
+    \ 1]\n    ]) == True, \"Diagonal\"\n"
+  learner_created: false
+status: Solved
+code: "\ndef check_line(line):\n    if 4 <= len(line) and 4 == line[0:4].count(line[0]):\n\
+  \        return True\n\ndef checkio(matrix):\n    #replace this for solution\n \
+  \   width = len(matrix[0])\n    height = len(matrix)\n    for y in range(height):\n\
+  \        for x in range(width):\n            h_line = matrix[y][x:]\n          \
+  \  if check_line(h_line):\n                return True\n\n            v_line = [matrix[r][x]\
+  \ for r in range(y, height)]\n            if check_line(v_line):\n             \
+  \   return True\n\n            right_down_line = [matrix[r][c] for r,c in zip(range(y,\
+  \ height), range(x, width))]\n            if check_line(right_down_line):\n    \
+  \            return True\n\n            left_down_line = [matrix[r][c] for r,c in\
+  \ zip(range(y, height), range(x, -1, -1))]\n            if check_line(left_down_line):\n\
+  \                return True\n\n    return False\n                \n\nif __name__\
+  \ == '__main__':\n    #These \"asserts\" using only for self-checking and not necessary\
+  \ for auto-testing\n    assert checkio([\n        [1, 2, 1, 1],\n        [1, 1,\
+  \ 4, 1],\n        [1, 3, 1, 6],\n        [1, 7, 2, 5]\n    ]) == True, \"Vertical\"\
+  \n    assert checkio([\n        [7, 1, 4, 1],\n        [1, 2, 5, 2],\n        [3,\
+  \ 4, 1, 3],\n        [1, 1, 8, 1]\n    ]) == False, \"Nothing here\"\n    assert\
+  \ checkio([\n        [2, 1, 1, 6, 1],\n        [1, 3, 2, 1, 1],\n        [4, 1,\
+  \ 1, 3, 1],\n        [5, 5, 5, 5, 5],\n        [1, 1, 3, 1, 1]\n    ]) == True,\
+  \ \"Long Horizontal\"\n    assert checkio([\n        [7, 1, 1, 8, 1, 1],\n     \
+  \   [1, 1, 7, 3, 1, 5],\n        [2, 3, 1, 2, 5, 1],\n        [1, 1, 1, 5, 1, 4],\n\
+  \        [4, 6, 5, 1, 3, 1],\n        [1, 1, 9, 1, 2, 1]\n    ]) == True, \"Diagonal\"\
+  \n"
+seconds_from_change: 31909594

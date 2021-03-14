@@ -1,0 +1,41 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "def bigger_price(limit: int, data: list) -> list:\n    \"\"\"\n        TOP\
+    \ most expensive goods\n    \"\"\"\n    # your code here\n    price_sort = sorted(data,\
+    \ key = lambda x : x['price'], reverse = True)\n    i=0\n    a=[]\n    while i<limit:\n\
+    \        a.append(price_sort[i])\n        i = i+1\n    return a\n        \n\n\n\
+    if __name__ == '__main__':\n    from pprint import pprint\n    print('Example:')\n\
+    \    pprint(bigger_price(2, [\n        {\"name\": \"bread\", \"price\": 100},\n\
+    \        {\"name\": \"wine\", \"price\": 138},\n        {\"name\": \"meat\", \"\
+    price\": 15},\n        {\"name\": \"water\", \"price\": 1}\n    ]))\n\n    # These\
+    \ \"asserts\" using for self-checking and not for auto-testing\n    assert bigger_price(2,\
+    \ [\n        {\"name\": \"bread\", \"price\": 100},\n        {\"name\": \"wine\"\
+    , \"price\": 138},\n        {\"name\": \"meat\", \"price\": 15},\n        {\"\
+    name\": \"water\", \"price\": 1}\n    ]) == [\n        {\"name\": \"wine\", \"\
+    price\": 138},\n        {\"name\": \"bread\", \"price\": 100}\n    ], \"First\"\
+    \n\n    assert bigger_price(1, [\n        {\"name\": \"pen\", \"price\": 5},\n\
+    \        {\"name\": \"whiteboard\", \"price\": 170}\n    ]) == [{\"name\": \"\
+    whiteboard\", \"price\": 170}], \"Second\"\n\n    print('Done! Looks like it is\
+    \ fine. Go and check it')\n"
+  learner_created: false
+status: Solved
+code: "def bigger_price(limit: int, data: list) -> list:\n    \"\"\"\n        TOP\
+  \ most expensive goods\n    \"\"\"\n    # your code here\n    price_sort = sorted(data,\
+  \ key = lambda x : x['price'], reverse = True)\n    i=0\n    a=[]\n    while i<limit:\n\
+  \        a.append(price_sort[i])\n        i = i+1\n    return a\n        \n\n\n\
+  if __name__ == '__main__':\n    from pprint import pprint\n    print('Example:')\n\
+  \    pprint(bigger_price(2, [\n        {\"name\": \"bread\", \"price\": 100},\n\
+  \        {\"name\": \"wine\", \"price\": 138},\n        {\"name\": \"meat\", \"\
+  price\": 15},\n        {\"name\": \"water\", \"price\": 1}\n    ]))\n\n    # These\
+  \ \"asserts\" using for self-checking and not for auto-testing\n    assert bigger_price(2,\
+  \ [\n        {\"name\": \"bread\", \"price\": 100},\n        {\"name\": \"wine\"\
+  , \"price\": 138},\n        {\"name\": \"meat\", \"price\": 15},\n        {\"name\"\
+  : \"water\", \"price\": 1}\n    ]) == [\n        {\"name\": \"wine\", \"price\"\
+  : 138},\n        {\"name\": \"bread\", \"price\": 100}\n    ], \"First\"\n\n   \
+  \ assert bigger_price(1, [\n        {\"name\": \"pen\", \"price\": 5},\n       \
+  \ {\"name\": \"whiteboard\", \"price\": 170}\n    ]) == [{\"name\": \"whiteboard\"\
+  , \"price\": 170}], \"Second\"\n\n    print('Done! Looks like it is fine. Go and\
+  \ check it')\n"
+seconds_from_change: 32585395

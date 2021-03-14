@@ -1,0 +1,77 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "class Warrior:\n    def __init__(self):\n        self.health = 50\n     \
+    \   self.attack = 5\n    def is_alive(self) -> bool:\n        if self.health <=\
+    \ 0:\n            return False\n        else:\n            return True\n\nclass\
+    \ Knight(Warrior):\n    def __init__(self):\n        super().__init__()\n    \
+    \    self.attack = 7\n\ndef fight(unit_1, unit_2) -> bool:\n    while True:\n\
+    \        unit_2.health -= unit_1.attack\n        if(unit_2.is_alive() == False):\n\
+    \            return True\n        unit_1.health -= unit_2.attack\n        if(unit_1.is_alive()\
+    \ == False):\n            return False\n\n\nclass Army():\n    def __init__(self):\n\
+    \        self.soldiers =[]\n    def add_units(self,member,i):\n        for _ in\
+    \ range(i):\n            self.soldiers.append(member())\n    def is_alive(self):\n\
+    \        return self.soldiers !=[]\n    def fighter(self):\n        return self.soldiers[0]\n\
+    \    def pop(self):\n        self.soldiers.pop(0)\n\n\nclass Battle():\n    def\
+    \ fight(self,army_1,army_2):\n        while(army_1.is_alive and army_2.is_alive):\n\
+    \            if fight(army_1.fighter,army_2.fighter):\n                army_2.pop\n\
+    \            else:\n                army_1.pop\n\n\n\n\nif __name__ == '__main__':\n\
+    \    #These \"asserts\" using only for self-checking and not necessary for auto-testing\n\
+    \n    chuck = Warrior()\n    bruce = Warrior()\n    carl = Knight()\n    dave\
+    \ = Warrior()\n    mark = Warrior()\n\n    assert fight(chuck, bruce) == True\n\
+    \    assert fight(dave, carl) == False\n    assert chuck.is_alive == True\n  \
+    \  assert bruce.is_alive == False\n    assert carl.is_alive == True\n    assert\
+    \ dave.is_alive == False\n    assert fight(carl, mark) == False\n    assert carl.is_alive\
+    \ == False\n\n    print(\"Coding complete? Let's try tests!\")\n\n\nif __name__\
+    \ == '__main__':\n    #These \"asserts\" using only for self-checking and not\
+    \ necessary for auto-testing\n    \n    #fight tests\n    chuck = Warrior()\n\
+    \    bruce = Warrior()\n    carl = Knight()\n    dave = Warrior()\n    mark =\
+    \ Warrior()\n\n    assert fight(chuck, bruce) == True\n    assert fight(dave,\
+    \ carl) == False\n    assert chuck.is_alive == True\n    assert bruce.is_alive\
+    \ == False\n    assert carl.is_alive == True\n    assert dave.is_alive == False\n\
+    \    assert fight(carl, mark) == False\n    assert carl.is_alive == False\n\n\
+    \    #battle tests\n    my_army = Army()\n    my_army.add_units(Knight, 3)\n \
+    \   \n    enemy_army = Army()\n    enemy_army.add_units(Warrior, 3)\n\n    army_3\
+    \ = Army()\n    army_3.add_units(Warrior, 20)\n    army_3.add_units(Knight, 5)\n\
+    \    \n    army_4 = Army()\n    army_4.add_units(Warrior, 30)\n\n    battle =\
+    \ Battle()\n\n    assert battle.fight(my_army, enemy_army) == True\n    assert\
+    \ battle.fight(army_3, army_4) == False\n    print(\"Coding complete? Let's try\
+    \ tests!\")\n"
+  learner_created: false
+status: Solved
+code: "class Warrior:\n    def __init__(self):\n        self.health = 50\n       \
+  \ self.attack = 5\n    def is_alive(self) -> bool:\n        if self.health <= 0:\n\
+  \            return False\n        else:\n            return True\n\nclass Knight(Warrior):\n\
+  \    def __init__(self):\n        super().__init__()\n        self.attack = 7\n\n\
+  def fight(unit_1, unit_2) -> bool:\n    while True:\n        unit_2.health -= unit_1.attack\n\
+  \        if(unit_2.is_alive() == False):\n            return True\n        unit_1.health\
+  \ -= unit_2.attack\n        if(unit_1.is_alive() == False):\n            return\
+  \ False\n\n\nclass Army():\n    def __init__(self):\n        self.soldiers =[]\n\
+  \    def add_units(self,member,i):\n        for _ in range(i):\n            self.soldiers.append(member())\n\
+  \    def is_alive(self):\n        return self.soldiers !=[]\n    def fighter(self):\n\
+  \        return self.soldiers[0]\n    def pop(self):\n        self.soldiers.pop(0)\n\
+  \n\nclass Battle():\n    def fight(self,army_1,army_2):\n        while(army_1.is_alive\
+  \ and army_2.is_alive):\n            if fight(army_1.fighter,army_2.fighter):\n\
+  \                army_2.pop\n            else:\n                army_1.pop\n\n\n\
+  \n\nif __name__ == '__main__':\n    #These \"asserts\" using only for self-checking\
+  \ and not necessary for auto-testing\n\n    chuck = Warrior()\n    bruce = Warrior()\n\
+  \    carl = Knight()\n    dave = Warrior()\n    mark = Warrior()\n\n    assert fight(chuck,\
+  \ bruce) == True\n    assert fight(dave, carl) == False\n    assert chuck.is_alive\
+  \ == True\n    assert bruce.is_alive == False\n    assert carl.is_alive == True\n\
+  \    assert dave.is_alive == False\n    assert fight(carl, mark) == False\n    assert\
+  \ carl.is_alive == False\n\n    print(\"Coding complete? Let's try tests!\")\n\n\
+  \nif __name__ == '__main__':\n    #These \"asserts\" using only for self-checking\
+  \ and not necessary for auto-testing\n    \n    #fight tests\n    chuck = Warrior()\n\
+  \    bruce = Warrior()\n    carl = Knight()\n    dave = Warrior()\n    mark = Warrior()\n\
+  \n    assert fight(chuck, bruce) == True\n    assert fight(dave, carl) == False\n\
+  \    assert chuck.is_alive == True\n    assert bruce.is_alive == False\n    assert\
+  \ carl.is_alive == True\n    assert dave.is_alive == False\n    assert fight(carl,\
+  \ mark) == False\n    assert carl.is_alive == False\n\n    #battle tests\n    my_army\
+  \ = Army()\n    my_army.add_units(Knight, 3)\n    \n    enemy_army = Army()\n  \
+  \  enemy_army.add_units(Warrior, 3)\n\n    army_3 = Army()\n    army_3.add_units(Warrior,\
+  \ 20)\n    army_3.add_units(Knight, 5)\n    \n    army_4 = Army()\n    army_4.add_units(Warrior,\
+  \ 30)\n\n    battle = Battle()\n\n    assert battle.fight(my_army, enemy_army) ==\
+  \ True\n    assert battle.fight(army_3, army_4) == False\n    print(\"Coding complete?\
+  \ Let's try tests!\")\n"
+seconds_from_change: 26384930

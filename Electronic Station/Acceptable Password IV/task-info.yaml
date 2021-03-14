@@ -1,0 +1,38 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "def is_acceptable_password(password: str) -> bool:\n    \n    l_result =\
+    \ False\n    t_result = False\n    s_result = False\n    result = False\n    if\
+    \ len(password) > 6:\n        l_result = True\n    for i in password:\n      \
+    \  if i.isdigit():\n            t_result = True\n        if i.isalpha():\n   \
+    \         s_result = True\n    if t_result == False:\n        if len(password)\
+    \ > 9:\n            t_result = True\n    if s_result == False:\n        if len(password)\
+    \ > 9:\n            s_result = True\n        \n        \n    if l_result == True\
+    \ and t_result == True and s_result == True:\n        result = True\n        \n\
+    \    return result\n\n\nif __name__ == '__main__':\n    print(\"Example:\")\n\n\
+    \    # These \"asserts\" are used for self-checking and not for an auto-testing\n\
+    \    assert is_acceptable_password('short') == False\n    assert is_acceptable_password('short54')\
+    \ == True\n    assert is_acceptable_password('muchlonger') == True\n    assert\
+    \ is_acceptable_password('ashort') == False\n    assert is_acceptable_password('muchlonger5')\
+    \ == True\n    assert is_acceptable_password('sh5') == False\n    assert is_acceptable_password('1234567')\
+    \ == False\n    assert is_acceptable_password('12345678910') == True\n    print(\"\
+    Coding complete? Click 'Check' to earn cool rewards!\")\n"
+  learner_created: false
+status: Solved
+code: "def is_acceptable_password(password: str) -> bool:\n    \n    l_result = False\n\
+  \    t_result = False\n    s_result = False\n    result = False\n    if len(password)\
+  \ > 6:\n        l_result = True\n    for i in password:\n        if i.isdigit():\n\
+  \            t_result = True\n        if i.isalpha():\n            s_result = True\n\
+  \    if t_result == False:\n        if len(password) > 9:\n            t_result\
+  \ = True\n    if s_result == False:\n        if len(password) > 9:\n           \
+  \ s_result = True\n        \n        \n    if l_result == True and t_result == True\
+  \ and s_result == True:\n        result = True\n        \n    return result\n\n\n\
+  if __name__ == '__main__':\n    print(\"Example:\")\n\n    # These \"asserts\" are\
+  \ used for self-checking and not for an auto-testing\n    assert is_acceptable_password('short')\
+  \ == False\n    assert is_acceptable_password('short54') == True\n    assert is_acceptable_password('muchlonger')\
+  \ == True\n    assert is_acceptable_password('ashort') == False\n    assert is_acceptable_password('muchlonger5')\
+  \ == True\n    assert is_acceptable_password('sh5') == False\n    assert is_acceptable_password('1234567')\
+  \ == False\n    assert is_acceptable_password('12345678910') == True\n    print(\"\
+  Coding complete? Click 'Check' to earn cool rewards!\")\n"
+seconds_from_change: 30187243

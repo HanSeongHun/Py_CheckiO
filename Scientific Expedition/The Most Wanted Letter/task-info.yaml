@@ -1,0 +1,42 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "def checkio(text: str) -> str:\n\n    #replace this for solution\n    text\
+    \ = text.lower()\n    text = sorted(text)\n    i = 0\n    check = []\n    sol\
+    \ = 0\n    for t in text:\n        if t.isalpha():\n            check.append(t)\n\
+    \    \n    if len(check) == 1:\n        return check[0]\n\n    i = 0\n    temp\
+    \ = check.count(check[0])\n    while True:\n        if check[i] != check[i+1]:\n\
+    \            if check.count(check[sol]) < check.count(check[i+1]):\n         \
+    \       sol = i+1\n        i = i+1\n        \n        if i+1 == len(check):\n\
+    \            break\n    \n    print(sol)\n    \n    return check[sol]\n      \
+    \      \nif __name__ == '__main__':\n    print(\"Example:\")\n    print(checkio(\"\
+    Hello World!\"))\n\n    #These \"asserts\" using only for self-checking and not\
+    \ necessary for auto-testing\n    assert checkio(\"Hello World!\") == \"l\", \"\
+    Hello test\"\n    assert checkio(\"How do you do?\") == \"o\", \"O is most wanted\"\
+    \n    assert checkio(\"One\") == \"e\", \"All letter only once.\"\n    assert\
+    \ checkio(\"Oops!\") == \"o\", \"Don't forget about lower case.\"\n    assert\
+    \ checkio(\"AAaooo!!!!\") == \"a\", \"Only letters.\"\n    assert checkio(\"abe\"\
+    ) == \"a\", \"The First.\"\n    print(\"Start the long test\")\n    assert checkio(\"\
+    a\" * 9000 + \"b\" * 1000) == \"a\", \"Long.\"\n    print(\"The local tests are\
+    \ done.\")"
+  learner_created: false
+status: Solved
+code: "def checkio(text: str) -> str:\n\n    #replace this for solution\n    text\
+  \ = text.lower()\n    text = sorted(text)\n    i = 0\n    check = []\n    sol =\
+  \ 0\n    for t in text:\n        if t.isalpha():\n            check.append(t)\n\
+  \    \n    if len(check) == 1:\n        return check[0]\n\n    i = 0\n    temp =\
+  \ check.count(check[0])\n    while True:\n        if check[i] != check[i+1]:\n \
+  \           if check.count(check[sol]) < check.count(check[i+1]):\n            \
+  \    sol = i+1\n        i = i+1\n        \n        if i+1 == len(check):\n     \
+  \       break\n    \n    print(sol)\n    \n    return check[sol]\n            \n\
+  if __name__ == '__main__':\n    print(\"Example:\")\n    print(checkio(\"Hello World!\"\
+  ))\n\n    #These \"asserts\" using only for self-checking and not necessary for\
+  \ auto-testing\n    assert checkio(\"Hello World!\") == \"l\", \"Hello test\"\n\
+  \    assert checkio(\"How do you do?\") == \"o\", \"O is most wanted\"\n    assert\
+  \ checkio(\"One\") == \"e\", \"All letter only once.\"\n    assert checkio(\"Oops!\"\
+  ) == \"o\", \"Don't forget about lower case.\"\n    assert checkio(\"AAaooo!!!!\"\
+  ) == \"a\", \"Only letters.\"\n    assert checkio(\"abe\") == \"a\", \"The First.\"\
+  \n    print(\"Start the long test\")\n    assert checkio(\"a\" * 9000 + \"b\" *\
+  \ 1000) == \"a\", \"Long.\"\n    print(\"The local tests are done.\")"
+seconds_from_change: 32501442

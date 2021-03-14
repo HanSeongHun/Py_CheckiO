@@ -1,0 +1,25 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "def frequency_sort(items):\n   return sorted(items, key= lambda x: (items.count(x),\
+    \ -items.index(x)), reverse = True)\n  \n\nif __name__ == '__main__':\n    print(\"\
+    Example:\")\n    print(frequency_sort([4, 6, 2, 2, 6, 4, 4, 4]))\n\n    # These\
+    \ \"asserts\" are used for self-checking and not for an auto-testing\n    assert\
+    \ list(frequency_sort([4, 6, 2, 2, 6, 4, 4, 4])) == [4, 4, 4, 4, 6, 6, 2, 2]\n\
+    \    assert list(frequency_sort(['bob', 'bob', 'carl', 'alex', 'bob'])) == ['bob',\
+    \ 'bob', 'bob', 'carl', 'alex']\n    assert list(frequency_sort([17, 99, 42]))\
+    \ == [17, 99, 42]\n    assert list(frequency_sort([])) == []\n    assert list(frequency_sort([1]))\
+    \ == [1]\n    print(\"Coding complete? Click 'Check' to earn cool rewards!\")\n"
+  learner_created: false
+status: Solved
+code: "def frequency_sort(items):\n   return sorted(items, key= lambda x: (items.count(x),\
+  \ -items.index(x)), reverse = True)\n  \n\nif __name__ == '__main__':\n    print(\"\
+  Example:\")\n    print(frequency_sort([4, 6, 2, 2, 6, 4, 4, 4]))\n\n    # These\
+  \ \"asserts\" are used for self-checking and not for an auto-testing\n    assert\
+  \ list(frequency_sort([4, 6, 2, 2, 6, 4, 4, 4])) == [4, 4, 4, 4, 6, 6, 2, 2]\n \
+  \   assert list(frequency_sort(['bob', 'bob', 'carl', 'alex', 'bob'])) == ['bob',\
+  \ 'bob', 'bob', 'carl', 'alex']\n    assert list(frequency_sort([17, 99, 42])) ==\
+  \ [17, 99, 42]\n    assert list(frequency_sort([])) == []\n    assert list(frequency_sort([1]))\
+  \ == [1]\n    print(\"Coding complete? Click 'Check' to earn cool rewards!\")\n"
+seconds_from_change: 32056696

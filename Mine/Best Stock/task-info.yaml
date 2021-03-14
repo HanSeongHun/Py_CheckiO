@@ -1,0 +1,23 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "def best_stock(a):\n    # your code here\n    answer = 0\n    ego = ''\n\
+    \    for s in a:\n        if a[s] > answer:\n            answer = a[s]\n     \
+    \       ego = s\n    return ego\n    \nif __name__ == '__main__':\n    print(\"\
+    Example:\")\n    print(best_stock({\"CAC\": 10.0, \"ATX\": 390.2, \"WIG\": 1.2}))\n\
+    \n    # These \"asserts\" are used for self-checking and not for an auto-testing\n\
+    \    assert best_stock({\"CAC\": 10.0, \"ATX\": 390.2, \"WIG\": 1.2}) == \"ATX\"\
+    \n    assert best_stock({\"CAC\": 91.1, \"ATX\": 1.01, \"TASI\": 120.9}) == \"\
+    TASI\"\n    print(\"Coding complete? Click 'Check' to earn cool rewards!\")\n"
+  learner_created: false
+status: Solved
+code: "def best_stock(a):\n    # your code here\n    answer = 0\n    ego = ''\n  \
+  \  for s in a:\n        if a[s] > answer:\n            answer = a[s]\n         \
+  \   ego = s\n    return ego\n    \nif __name__ == '__main__':\n    print(\"Example:\"\
+  )\n    print(best_stock({\"CAC\": 10.0, \"ATX\": 390.2, \"WIG\": 1.2}))\n\n    #\
+  \ These \"asserts\" are used for self-checking and not for an auto-testing\n   \
+  \ assert best_stock({\"CAC\": 10.0, \"ATX\": 390.2, \"WIG\": 1.2}) == \"ATX\"\n\
+  \    assert best_stock({\"CAC\": 91.1, \"ATX\": 1.01, \"TASI\": 120.9}) == \"TASI\"\
+  \n    print(\"Coding complete? Click 'Check' to earn cool rewards!\")\n"
+seconds_from_change: 34043094
