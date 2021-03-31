@@ -7,8 +7,17 @@ files:
 
 
     def remove_all_before(items: list, border: int) -> Iterable:
-        # your code here
-        return items
+        count = 0
+        for i in items:
+            if int(i) == border:
+                break
+            else :
+                count += 1
+        if len(items) == count:
+            result = items
+        else:
+            result = items[count:]
+        return result
 
 
     if __name__ == '__main__':
@@ -24,14 +33,23 @@ files:
         assert list(remove_all_before([7, 7, 7, 7, 7, 7, 7, 7, 7], 7)) == [7, 7, 7, 7, 7, 7, 7, 7, 7]
         print("Coding complete? Click 'Check' to earn cool rewards!")
   learner_created: false
-status: Unchecked
+status: Solved
 code: |
   from typing import Iterable
 
 
   def remove_all_before(items: list, border: int) -> Iterable:
-      # your code here
-      return items
+      count = 0
+      for i in items:
+          if int(i) == border:
+              break
+          else :
+              count += 1
+      if len(items) == count:
+          result = items
+      else:
+          result = items[count:]
+      return result
 
 
   if __name__ == '__main__':
@@ -46,4 +64,4 @@ code: |
       assert list(remove_all_before([], 0)) == []
       assert list(remove_all_before([7, 7, 7, 7, 7, 7, 7, 7, 7], 7)) == [7, 7, 7, 7, 7, 7, 7, 7, 7]
       print("Coding complete? Click 'Check' to earn cool rewards!")
-seconds_from_change: 9223372036854775807
+seconds_from_change: 2122

@@ -4,8 +4,12 @@ files:
   visible: true
   text: |
     def is_all_upper(text: str) -> bool:
-        # your code here
-        return False
+        text = text.replace(' ','')
+        for i in text:
+            if i.islower():
+                return False
+        return True
+
 
 
     if __name__ == '__main__':
@@ -22,11 +26,15 @@ files:
         assert is_all_upper('55 55 5') == True
         print("Coding complete? Click 'Check' to earn cool rewards!")
   learner_created: false
-status: Unchecked
+status: Solved
 code: |
   def is_all_upper(text: str) -> bool:
-      # your code here
-      return False
+      text = text.replace(' ','')
+      for i in text:
+          if i.islower():
+              return False
+      return True
+
 
 
   if __name__ == '__main__':
@@ -42,4 +50,4 @@ code: |
       assert is_all_upper('444') == True
       assert is_all_upper('55 55 5') == True
       print("Coding complete? Click 'Check' to earn cool rewards!")
-seconds_from_change: 9223372036854775807
+seconds_from_change: 1

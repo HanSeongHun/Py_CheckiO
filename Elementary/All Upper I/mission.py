@@ -1,6 +1,10 @@
 def is_all_upper(text: str) -> bool:
-    # your code here
-    return False
+    text = text.replace(' ','')
+    for i in text:
+        if i.islower():
+            return False
+    return True
+
 
 
 if __name__ == '__main__':

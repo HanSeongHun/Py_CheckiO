@@ -26,4 +26,4 @@ code: "def is_acceptable_password(password: str) -> bool:\n    # your code here\
   \ == False\n    assert is_acceptable_password('ashort') == False\n    assert is_acceptable_password('muchlonger5')\
   \ == True\n    assert is_acceptable_password('sh5') == False\n    print(\"Coding\
   \ complete? Click 'Check' to earn cool rewards!\")\n"
-seconds_from_change: 30189554
+seconds_from_change: 31622541

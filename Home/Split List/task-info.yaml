@@ -68,4 +68,4 @@ code: |
       assert split_list([1]) == [[1], []]
       assert split_list([]) == [[], []]
       print("Coding complete? Click 'Check' to earn cool rewards!")
-seconds_from_change: 29998711
+seconds_from_change: 31431698

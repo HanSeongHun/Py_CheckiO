@@ -31,4 +31,4 @@ code: "def unix_match(filename: str, pattern: str) -> bool:\n    if filename == 
   \    \n    # These \"asserts\" are used for self-checking and not for an auto-testing\n\
   \    assert unix_match(\"nametxt\",\"name[]txt\") == True\n    print(\"Coding complete?\
   \ Click 'Check' to earn cool rewards!\")\n"
-seconds_from_change: 30008131
+seconds_from_change: 31441117

@@ -74,4 +74,4 @@ code: "class Warrior:\n    def __init__(self):\n        self.health = 50\n      
   \ 30)\n\n    battle = Battle()\n\n    assert battle.fight(my_army, enemy_army) ==\
   \ True\n    assert battle.fight(army_3, army_4) == False\n    print(\"Coding complete?\
   \ Let's try tests!\")\n"
-seconds_from_change: 26384930
+seconds_from_change: 27817916

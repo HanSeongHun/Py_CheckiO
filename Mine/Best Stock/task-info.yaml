@@ -20,4 +20,4 @@ code: "def best_stock(a):\n    # your code here\n    answer = 0\n    ego = ''\n 
   \ assert best_stock({\"CAC\": 10.0, \"ATX\": 390.2, \"WIG\": 1.2}) == \"ATX\"\n\
   \    assert best_stock({\"CAC\": 91.1, \"ATX\": 1.01, \"TASI\": 120.9}) == \"TASI\"\
   \n    print(\"Coding complete? Click 'Check' to earn cool rewards!\")\n"
-seconds_from_change: 34043094
+seconds_from_change: 35476081

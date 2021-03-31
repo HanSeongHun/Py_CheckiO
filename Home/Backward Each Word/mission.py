@@ -1,6 +1,15 @@
 def backward_string_by_word(text: str) -> str:
     # your code here
-    return None
+    temp = list(text)
+    num = []
+    for i in range(len(temp)):
+        if temp[i] == ' ':
+            num.append(0)
+        else:
+            num.append(1)
+
+
+
 
 
 if __name__ == '__main__':

@@ -1,7 +1,11 @@
 def is_stressful(subj):
-    """
-        recognize stressful subject
-    """
+
+    new_list = []
+    for v in subj:
+        if v not in new_list:
+            new_list.append(v)
+
+
     return False
 
 

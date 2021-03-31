@@ -26,4 +26,4 @@ code: "def left_join(phrases):\n    \"\"\"\n        Join strings and replace \"r
   \ \"bleftness wleft\", \"One phrase\"\n    assert left_join((\"enough\", \"jokes\"\
   )) == \"enough,jokes\", \"Nothing to replace\"\n    print(\"Coding complete? Click\
   \ 'Check' to review your tests and earn cool rewards!\")\n"
-seconds_from_change: 32791902
+seconds_from_change: 34224888

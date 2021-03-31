@@ -39,4 +39,4 @@ code: "def checkio(text: str) -> str:\n\n    #replace this for solution\n    tex
   ) == \"a\", \"Only letters.\"\n    assert checkio(\"abe\") == \"a\", \"The First.\"\
   \n    print(\"Start the long test\")\n    assert checkio(\"a\" * 9000 + \"b\" *\
   \ 1000) == \"a\", \"Long.\"\n    print(\"The local tests are done.\")"
-seconds_from_change: 32501442
+seconds_from_change: 33934428

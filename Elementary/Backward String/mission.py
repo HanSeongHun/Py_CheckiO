@@ -1,6 +1,10 @@
 def backward_string(val: str) -> str:
     # your code here
-    return None
+    val = list(val)
+    val.reverse()
+    val = "".join(val)
+
+    return val
 
 
 if __name__ == '__main__':

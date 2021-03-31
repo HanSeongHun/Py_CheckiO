@@ -1,9 +1,14 @@
 def end_zeros(num: int) -> int:
     num = str(num)
+    num = list(num)
+    num.reverse()
     count = 0
-    while
-        return count
-
+    for i in range(len(num)) :
+        if int(num[i]) == 0 :
+            count += 1
+        else :
+            break
+    return count
 
 if __name__ == '__main__':
     print("Example:")

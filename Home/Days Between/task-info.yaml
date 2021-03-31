@@ -3,9 +3,16 @@ files:
 - name: mission.py
   visible: true
   text: |
+    from datetime import datetime
     def days_diff(a, b):
         # your code here
-        return None
+        d1 = datetime(a[0],a[1],a[2])
+        d2 = datetime(b[0],b[1],b[2])
+
+        x = d1 - d2
+
+
+        return abs(x.days)
 
 
     if __name__ == '__main__':
@@ -18,11 +25,18 @@ files:
         assert days_diff((2014, 8, 27), (2014, 1, 1)) == 238
         print("Coding complete? Click 'Check' to earn cool rewards!")
   learner_created: false
-status: Unchecked
+status: Solved
 code: |
+  from datetime import datetime
   def days_diff(a, b):
       # your code here
-      return None
+      d1 = datetime(a[0],a[1],a[2])
+      d2 = datetime(b[0],b[1],b[2])
+
+      x = d1 - d2
+
+
+      return abs(x.days)
 
 
   if __name__ == '__main__':
@@ -34,4 +48,4 @@ code: |
       assert days_diff((2014, 1, 1), (2014, 8, 27)) == 238
       assert days_diff((2014, 8, 27), (2014, 1, 1)) == 238
       print("Coding complete? Click 'Check' to earn cool rewards!")
-seconds_from_change: 9223372036854775807
+seconds_from_change: 1382804

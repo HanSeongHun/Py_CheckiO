@@ -1,6 +1,13 @@
+from datetime import datetime
 def days_diff(a, b):
     # your code here
-    return None
+    d1 = datetime(a[0],a[1],a[2])
+    d2 = datetime(b[0],b[1],b[2])
+
+    x = d1 - d2
+
+
+    return abs(x.days)
 
 
 if __name__ == '__main__':
