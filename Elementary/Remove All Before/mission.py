@@ -2,8 +2,17 @@ from typing import Iterable
 
 
 def remove_all_before(items: list, border: int) -> Iterable:
-    # your code here
-    return items
+    count = 0
+    for i in items:
+        if int(i) == border:
+            break
+        else :
+            count += 1
+    if len(items) == count:
+        result = items
+    else:
+        result = items[count:]
+    return result
 
 
 if __name__ == '__main__':
